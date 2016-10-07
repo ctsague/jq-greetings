@@ -3,16 +3,12 @@ console.log('have fun !');
 
 
 $("button").click(function(){
-	
-var Mon_objet = {
-	Prenom :$("#first_name").val(),
-	Nom : $("#last_name").val(),
-	Ville : $("#city").val()
-};
+	var monObjet = {
+		prenom :$("#first_name").val(),
+		nom : $("#last_name").val(),
+		ville : $("#city").val()
+	};
 
-console.log(Mon_objet);
-$("#username").html(Mon_objet.Prenom + " " + Mon_objet.Nom);
-
-
-
+	console.log(monObjet);
+	$("#username").html(monObjet.prenom + " " + monObjet.nom);
 });
